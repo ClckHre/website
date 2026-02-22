@@ -1,0 +1,41 @@
+body {
+    background-image: url(celeste-summit1.jpg);
+    overflow: hidden;
+    margin: 0;
+}
+.container {
+    display: flex;
+    max-width: 800px;
+    max-height: 1600px;
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+}
+.sidebar {
+    width: 150px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(100,100,100,0.5));
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;    
+}
+.sidebar .button {
+    user-select: none; 
+    width: 125px;
+    background-color: aqua;
+    border-radius: 8px;
+    margin: 0px auto;
+    text-align: center;
+}
+.sidebar .button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+.sidebar .button:first-child {
+    margin-top: 10px;
+}
+.content {
+    flex: 1;
+    overflow-y: auto;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(100,100,100,0.5));
+}
